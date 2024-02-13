@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie sua mentoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1 class="titulo">avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./assets/img1.png" alt="">
+            <div class="informations">
+                <h3>Informações pessoais</h3>
+            </div>
+        </header>
+
+        <form id="form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="information-contate">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="lastname">Sobrenome</label>
+                            <input type="text" id="lastname">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+
+                    <div class="input-wrapper">
+                        <label for="select">Selecione quem foi o seu mentor</label>
+                        <select name="select" id="select">
+                            <option value="1">Monitor 1</option>
+                            <option value="2">Monitor 2</option>
+                            <option value="3">Monitor 3</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Feedback sobre o mentor</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="check" required>
+                        <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando próxima mentoria</legend>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="event-date">
+                        </div>
+
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="event-begin">Das</label>
+                                <input type="time" id="event-begin">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="event-end">Até</label>
+                                <input type="time" id="event-end">
+                            </div>
+                        </div>
+                    </div>
+
+            </fieldset>
+        </form>
+        <footer>
+            <button form="form" class="btn">Salvar</button>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #BFD7E4;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+body::before {
+    content: '';
+    background: #293241;
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1,
+h3,
+button,
+fieldset {
+    font-family: "Staatliches", sans-serif;
+}
+
+p,
+label,
+input,
+select,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+.page {
+    width: 750px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .titulo {
+
+    margin-top: 107px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+header p {
+    width: 391px;
+    height: 46px;
+}
+
+.page img {
+    width: 225px;
+    height: 100px;
+    margin-bottom: 32px;
+}
+
+.page .informations {
+    height: 135px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background: #F67669;
+    text-align: center;
+}
+
+.page .informations h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 50px 275px;
+}
+
+form {
+    background: #FFFFFF;
+    color: #4E4958;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 64px 0;
+    font-size: 14px;
+}
+
+.fieldset-wrapper legend {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #253B51;
+    margin-bottom: 40px;
+}
+
+.information-contate {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 16px;
+}
+
+.information-contate input,
+select {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+    border-radius: 8px;
+    height: 56px;
+    border: 1px solid #e4dfdf;
+    padding-left: 16px;
+    margin-top: 7px;
+}
+
+.input-wrapper textarea {
+    height: 166px;
+    padding: 16px;
+}
+
+
+.fieldset-wrapper .input-wrapper label span {
+    color: #C1BCCC;
+    font-size: 12px;
+}
+
+.fieldset-wrapper .input-wrapper label span:hover {
+    color: #948fa0;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 14px;
+    color: #4E4958;
+}
+
+.checkbox-wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.checkbox-wrapper input {
+    border-radius: 8px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #e4dfdf;
+
+}
+
+.col-3 {
+    display: flex;
+    gap: 32px;
+}
+
+.col-3 input {
+    width: 300px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.col-2 input {
+    width: 140px;
+}
+
+footer {
+    background: #FFFFFF;
+    padding: 64px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 390px;
+}
+
+footer .btn {
+    border: none;
+    height: 51px;
+    width: 622px;
+    background: #F67669;
+    color: #FFF;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+footer .btn:hover {
+    background: #ca6156;
+}
